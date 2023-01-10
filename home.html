@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--TODO REMOVE AUTOREFRESH-->
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scripts/jquery3.4.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    <!--DEV-->
+    <!-- <link rel="stylesheet" href="styles/pstyle.scss"> -->
+
+    <!--PROD-->
+    <link rel="stylesheet" href="styles/pstyle.css"> 
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Daniel Tripp</title>
+  </head>
+
+
+
+  <body class="light" id="top">
+
+    <header class="header center" >
+      <h3>
+        <a href="./index.html" class="link"
+          >DDTRIPP</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="./blog">Blog</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+
+
+
+    <main>
+
+      <!-- About -->
+      <div class="section about center">
+
+        <h1>Hi, I'm <span class="about__name">Daniel Tripp</span></h1>
+        <h2><span class="type about__name"></span></h2>
+
+        <script src="./scripts/typed.js"></script>
+        <script>
+          var typed = new Typed('.type', {
+            strings: [
+              'Software Engineer',
+              'Climber', 
+              'Dog Dad',
+              'Software Engineer'
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: false
+          });
+        </script>
+
+        <p class="about__desc">
+          Hello and welcome to my website! My name is Daniel and I am a driven 
+          and enthusiastic software engineer with experience interning at industry 
+          leaders like Google and Quantcast. I am constantly seeking new challenges 
+          and opportunities to grow as a software engineer. I am passionate about 
+          using my technical skills to create innovative solutions and make a positive 
+          impact. In my free time, I enjoy staying active by rock climbing indoors 
+          and trying out new delicious desserts. I am currently enrolled in a Master's 
+          degree program in computer science and have completed coursework in a wide 
+          range of subjects including algorithms, artificial intelligence, data 
+          structures, and software development frameworks. Thank you for visiting my 
+          website. I hope you find it informative and please don't hesitate to reach 
+          out to me with any questions or opportunities. I am always eager to learn 
+          and grow as a software engineer.
+        </p>
+      </div>
+                
+      <!-- Details/Conact -->
+      <section class="section contact center">
+        <div class="center">
+          <a href="./img/resume.pdf" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+          <a
+            href="https://github.com/thedtripp"
+            aria-label="github"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/danieldtripp"
+            aria-label="linkedin"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+
+
+        <h2 class="section__title">Projects</h2>
+
+        
+    <div class="row">
+
+        <a class="no-decoration" href="https://github.com/thedtripp/whoami" target="_blank">
+          <div class="pknmcard charizard">
+              <div class="project__grid">
+
+                  <div class="img__project__grid">
+                    <img src="./img/aiface.jpeg" alt="" srcset="" style=" max-width: 100%; height: 100%; margin: auto; display: block;">
+                  </div>
+                  <div class="title__project__grid">
+                      <h3 class="centered">Celeb Face Match</h3>
+                  </div>
+                  <div class="description__project__grid">
+                      <p class="centered">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+        <a class="no-decoration" href="https://stocks-by-ddtripp.herokuapp.com" target="_blank">
+            <div class="pknmcard charizard">
+                <div class="project__grid">
+
+                    <div class="img__project__grid">
+                        <img src="./img/stockmarket.jpeg" alt="" srcset="" style=" max-width: 100%; height: 100%; margin: auto; display: block;">
+                    </div>
+                    <div class="title__project__grid">
+                        <h3 class="centered">Stock News</h3>
+                    </div>
+                    <div class="description__project__grid">
+                        <p class="centered">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/data-structures" target="_blank">
+            <div class="pknmcard charizard">
+                <div class="project__grid">
+
+                    <div class="img__project__grid">
+                      <img src="./img/datastructures.png" alt="" srcset="" style=" max-width: 100%; height: 100%; margin: auto; display: block;">
+                    </div>
+                    <div class="title__project__grid">
+                        <h3 class="centered">Data Structures</h3>
+                    </div>
+                    <div class="description__project__grid">
+                        <p class="centered">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/battleship" target="_blank">
+            <div class="pknmcard charizard">
+                <div class="project__grid">
+
+                    <div class="img__project__grid">
+                      <img src="./img/battleship.jpeg" alt="" srcset="" style=" max-width: 100%; height: 100%; margin: auto; display: block;">
+                    </div>
+                    <div class="title__project__grid">
+                        <h3 class="centered">Battleship</h3>
+                    </div>
+                    <div class="description__project__grid">
+                        <p class="centered">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/Database-Design-Term-Project" target="_blank">
+            <div class="pknmcard charizard">
+                <div class="project__grid">
+
+                    <div class="img__project__grid">
+                      <img src="./img/airplanes.jpeg" alt="" srcset="" style=" max-width: 100%; height: 100%; margin: auto; display: block;">
+                    </div>
+                    <div class="title__project__grid">
+                        <h3 class="centered">Air Travel DB</h3>
+                    </div>
+                    <div class="description__project__grid">
+                        <p class="centered">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/n-queens" target="_blank">
+            <div class="pknmcard charizard">
+                <div class="project__grid">
+
+                    <div class="img__project__grid">
+                      <img src="./img/chessqueen.webp" alt="" srcset="" style=" max-width: 100%; height: 100%; margin: auto; display: block;">
+                    </div>
+                    <div class="title__project__grid">
+                        <h3 class="centered">N-Queens</h3>
+                    </div>
+                    <div class="description__project__grid">
+                        <p class="centered">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- <div class="pknmcard eevee"></div> -->
+        <!-- <div class="pknmcard charizard"></div> -->
+        <!-- <div class="pknmcard charizard animated"></div> -->
+        <!-- <div class="pknmcard mewtwo animated"></div> -->
+        <!-- <div class="pknmcard eevee"></div> -->
+
+      </div>
+
+        <!-- <div class="projects__grid">
+          <div class="project">
+            <h3>Stock News</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Flask</li>
+              <li class="project__stack-item">Bootstrap</li>
+              <li class="project__stack-item">pandas</li>
+            </ul>
+
+
+            <a
+              href="https://stocks-by-ddtripp.herokuapp.com/"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Celebrity Face Match</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Tensorflow</li>
+              <li class="project__stack-item">OpenCV</li>
+              <li class="project__stack-item">Flask</li>
+            </ul>
+
+            <a
+              href="https://github.com/thedtripp/whoami"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+          </div>
+
+          <div class="project">
+            <h3>Geolocate Hackers</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Node</li>
+              <li class="project__stack-item">InfluxDB</li>
+              <li class="project__stack-item">Grafana</li>
+            </ul>
+
+            <a
+              href="https://github.com/thedtripp/Geolocating-SSH-Hackers"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Linux/Unix</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">MS Office</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:daniel.tripp100@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+  </div>
+
+    <footer class="footer">
+      <a
+        href="#"
+        class="link footer__link"
+      >
+        Created by Daniel Tripp with &#10084;
+
+        <!-- Created By chatGPT with &#10084;<br><br>
+        Just kidding...<br><br>
+        Really. -->
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./scripts/darklightscript.js"></script>
+
+    <style class="hover"></style>
+
+    <script src="./scripts/pkmnscript.js"></script>  
+
+  </body>
+</html>

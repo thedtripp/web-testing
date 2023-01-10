@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--TODO REMOVE AUTOREFRESH-->
+  <!-- <meta http-equiv="refresh" content="3"> -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index-style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Daniel D. Tripp</title>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">DDTRIPP</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <video src="./img/background-video.mov" muted loop autoplay></video>
+    
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2 class="rage">Leveraging</h2>
+      <h3>The Power of Technology</h3>
+      <p>Using code to create meaningful change: I am driven by the opportunity 
+        to use my skills in coding and software development to make a positive impact in 
+        the world. With the right tools and mindset, 
+        I believe we can build a brighter future for all.</p>
+      <a href="./home.html">Enter</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="https://www.github.com/thedtripp" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/danieldtripp" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+      <li><a href="https://twitter.com/DanielDTripp" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+      <li><a href="mailto:daniel.tripp100@gmail.com"><i class="fa fa-envelope fa-3x"></i></a></li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./home.html#projects">Projects</a></li>
+      <li><a href="./blog">Blog</a></li>
+      <li><a href="./img/resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="./home.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+</body>
+</html>
