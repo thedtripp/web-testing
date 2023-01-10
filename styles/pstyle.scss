@@ -26,19 +26,16 @@
   
   
   .pknmcard {
-  
-    // width: 71.5vw;
-    // height: 100vw;
-      height: clamp(400px, 140vh, 40.2vw);
-      width: clamp(320px, 105vh, 30.2vw);
-    @media screen and (min-width: 600px) {
+    height: 400px;
+    width: 320px;
+    /* @media screen and (min-width: 600px) {
       // width: 61vh;
       // height: 85vh;
       // max-width: 500px;
       // max-height: 700px;
       height: clamp(22vw, 105vh, 30.2vw);
       width: clamp(22vw, 105vh, 30.2vw);
-    }
+    } */
     
     position: relative;
     overflow: hidden;
