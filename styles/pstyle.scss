@@ -1,29 +1,9 @@
 :root {
     --color1: rgb(0, 231, 255);
-    --color2: rgb(255, 0, 231);
-    --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
-    --charizard1: #fac;
-    --charizard2: #ddccaa;
-    // --charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);
-    // --charizardfront: url(https://media.licdn.com/dms/image/C5603AQG73EtYwwfl0A/profile-displayphoto-shrink_800_800/0/1634060693116?e=1678320000&v=beta&t=sruaFRY9D8qUiFnslHjBQE18BGavKReutYDTaM5z97o);
-  
-    --pika1: #54a29e;
-    --pika2: #a79d66;
-    --pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
-    // --pikafront: url(https://media.licdn.com/dms/image/C5603AQG73EtYwwfl0A/profile-displayphoto-shrink_800_800/0/1634060693116?e=1678320000&v=beta&t=sruaFRY9D8qUiFnslHjBQE18BGavKReutYDTaM5z97o);
-  
-    --eevee1: #efb2fb;
-    --eevee2: #acc6f8;
-    --eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);
-    --eeveefront: url(https://media.licdn.com/dms/image/C5603AQG73EtYwwfl0A/profile-displayphoto-shrink_800_800/0/1634060693116?e=1678320000&v=beta&t=sruaFRY9D8qUiFnslHjBQE18BGavKReutYDTaM5z97o);
-    --mewtwo1: #efb2fb;
-    --mewtwo2: #acc6f8;
-    --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
-    --mewtwofront: url(https://media.licdn.com/dms/image/C5603AQG73EtYwwfl0A/profile-displayphoto-shrink_800_800/0/1634060693116?e=1678320000&v=beta&t=sruaFRY9D8qUiFnslHjBQE18BGavKReutYDTaM5z97o);
-  
+    --color2: rgb(149, 0, 255);
+    --charizard1: rgb(137, 155, 244);
+    --charizard2: #ddccaa;  
   }
-  
-  
   
   .pknmcard {
     height: 400px;
@@ -57,10 +37,7 @@
     will-change: transform, filter;
     
     background-color: #040712;
-    background-image: var(--front);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+
     transform-origin: center;
     
   }
@@ -78,25 +55,6 @@
   .pknmcard.charizard {
     --color1: var(--charizard1);
     --color2: var(--charizard2);
-    --front: var(--charizardfront);
-  }
-  .pknmcard.pika {
-    --color1: var(--pika1);
-    --color2: var(--pika2);
-    --front: var(--pikafront);
-  }
-  .pknmcard.mewtwo {
-    --color1: var(--mewtwo1);
-    --color2: var(--mewtwo2);
-    --front: var(--mewtwofront);
-  }
-  .pknmcard.eevee {
-    --color1: #ec9bb6;
-    --color2: #ccac6f;
-    --color3: #69e4a5;
-    --color4: #8ec5d6;
-    --color5: #b98cce;
-    --front: var(--eeveefront);
   }
   
   .pknmcard:before,
@@ -185,18 +143,18 @@
   .pknmcard.animated {
     transition: none;
     animation: holoCard 12s ease 0s 1;
-    &:before { 
-      transition: none;
-      animation: holoGradient 12s ease 0s 1;
-    }
-    &:after {
-      transition: none;
-      animation: holoSparkle 12s ease 0s 1;
-    }
+  }
+
+  .pknmcard.animated::before {
+    transition: none;
+    animation: holoGradient 12s ease 0s 1;
   }
   
-  
-  
+
+  .pknmcard.animated::after {
+    transition: none;
+    animation: holoSparkle 12s ease 0s 1;
+  }
   
   @keyframes holoSparkle {
     0%, 100% {
@@ -261,68 +219,17 @@
     }
   }
   
-  
-  
-  .pknmcard.eevee:hover {
-    box-shadow: 
-      0 0 30px -5px white,
-      0 0 10px -2px white,
-      0 55px 35px -20px rgba(0, 0, 0, 0.5);
-  }
-  .pknmcard.eevee:hover:before,
-  .pknmcard.eevee.active:before {
-    background-image: linear-gradient(
-      115deg,
-      transparent 20%,
-      var(--color1) 36%,
-      var(--color2) 43%,
-      var(--color3) 50%,
-      var(--color4) 57%,
-      var(--color5) 64%,
-      transparent 80%
-    );
-  }
-  
-  // html, body {
-  //   height: 100%;
-  //   background-color: #333844;
-  //   padding: 0;
-  //   z-index: 1;
-  //   transform: translate3d(0,0,0.1px);
-  // }
-  // body {
-  //   color: white;
-  //   background-color: #333844;
-  //   font-family: "Heebo", sans-serif;
-  //   text-align: center;
-  // }
-  // h1 {
-  //   display: block;
-  //   margin: 30px 0;
-  // }
-  // p {
-  //   margin-top: 5px;
-  //   font-weight: 200;
-  // }
-  // #app {
-  //   position: relative;
-  // }
-  
   .row {
     margin: auto;
-    // width: 100%;
-    // align-items: center;
     justify-content: space-evenly;
     perspective: 2000px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: 0 0px;
-    // background-color: blue;
   }
   
-  
-  
+
   .cards { 
     display: flex;
     flex-direction: column;
@@ -340,49 +247,7 @@
       flex-direction: row;
     }
   }
-  
-  
-  .cards .pknmcard {
-    &:nth-child(2) {
-      &, &:before, &:after {
-        animation-delay: 0.25s;
-      }
-    }
-    &:nth-child(3) {
-      &, &:before, &:after {
-        animation-delay: 0.5s;
-      }
-    }
-    &:nth-child(4) {
-      &, &:before, &:after {
-        animation-delay: 0.75s;
-      }
-    }
-  }
-  
-  
-  // p {
-  //   font-weight: 400;
-  //   font-size: 18px;
-  //   padding: 1em;
-  //   background: rgba(0,0,0,0.3);
-  //   margin-top: 0;
-  // }
-  
-  // p.bottom {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   margin-bottom: 0;
-  // }
-  // p a {
-  //   color: cyan;
-  // }
-  
-  // html,body,main {
-  //   min-height: 100%;
-  // }
+
   
   a:hover.no-decoration {
     text-decoration: none;
