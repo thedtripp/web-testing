@@ -253,6 +253,26 @@
     text-decoration: none;
   }
   
+  .project-img {
+    background-color: rgb(148, 156, 255);
+    height:54%;
+    width:100%
+  }
+
+  .project-txt {
+    background-color: rgb(148, 156, 255);
+    height:46%;
+    width:100%
+  }
+
+  .txt-title-container {
+    height: 37.5%;
+  }
+
+  .txt-desc-container {
+    height: 62.5%;
+  }
+  
   .project__grid {  
     display: grid;
     grid-template-columns: 1fr;
