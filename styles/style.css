@@ -97,6 +97,7 @@ button {
     font-size: 2.6rem;
   }
 }
+
 */
 /*===================
   buttons and links
@@ -381,13 +382,13 @@ main {
 
   .contact {
     display: flex;
-    align-items:center;
+    align-items: center;
   }
 
   .contact .link--icon {
     margin-right: 0.8em;
   }
-  
+
   .contact .btn--outline {
     margin-right: 1em;
   }
@@ -431,18 +432,18 @@ main {
   .scroll-container {
     display: none;
   }
-} 
+}
 
 @media (max-width: 400px) {
   .contact {
     display: flex;
-    align-items:center;
+    align-items: center;
   }
 
   .contact .link--icon {
     margin-right: 0.8em;
   }
-  
+
   .contact .btn--outline {
     margin-right: 1em;
   }

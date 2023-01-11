@@ -11,7 +11,7 @@
     --theme-color: rgb(25, 3, 80);
     --text-color: rgb(56, 12, 152);
 
-  }
+}
 
 .showcase {
     position: absolute;
@@ -28,7 +28,7 @@
     transition: 0.5s;
 }
 
-.showcase.active{
+.showcase.active {
     right: 285px;
 
 }
@@ -53,7 +53,7 @@
 
 .toggle {
     position: relative;
-    width:60px;
+    width: 60px;
     height: 60px;
     background: url(https://i.ibb.co/HrfVRcx/menu.png);
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@
     background: #fff;
     padding: 10px 30px;
     text-decoration: none;
-    color:#111;
+    color: #111;
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -192,12 +192,16 @@
 }
 
 @media(max-width: 798px) {
-    .showcase, .showcase header {
+
+    .showcase,
+    .showcase header {
         padding: 40px;
     }
+
     .text h2 {
         font-size: 3em;
     }
+
     .text h3 {
         font-size: 2em;
     }
