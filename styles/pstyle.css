@@ -254,13 +254,14 @@
 }
 
 .row {
+  background-color: red;
   margin: auto;
   justify-content: space-evenly;
   perspective: 2000px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px;
+  padding: 0 40px;
 }
 
 
@@ -289,7 +290,6 @@ a:hover.no-decoration {
 
 .project-img-container {
   background-color: rgb(148, 156, 255);
-  background-color: green;
   height: 54%;
   width: 100%
 }
