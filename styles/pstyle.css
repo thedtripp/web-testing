@@ -252,7 +252,6 @@
 }
 
 .row {
-  background-color: blue;
   margin: auto;
   justify-content: space-evenly;
   perspective: 2000px;
@@ -298,14 +297,6 @@ a:hover.no-decoration {
   width: 100%
 }
 
-.txt-title-container {
-  height: 37.5%;
-}
-
-.txt-desc-container {
-  height: 62.5%;
-}
-
 .centered-title {
   display: flex;
   align-items: center;
@@ -333,4 +324,15 @@ h3.centered-title {
 
 .project-img {
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .pknmcard {
+    height: 300px;
+    width: 240px;
+  }
+
+  p.centered-desc {
+    padding: 0px 5px;
+  }
 }
