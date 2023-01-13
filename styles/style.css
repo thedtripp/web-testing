@@ -113,22 +113,6 @@ button {
   color: var(--clr-primary);
 }
 
-/* .link::before {
-  content: "";
-  display: inline;
-  width: 0%;
-  height: 0.2em;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--clr-primary);
-  transition: width 0.2s ease-in;
-}
-
-.link:hover::before,
-.link:focus::before {
-  width: 100%;
-} */
-
 .link--nav {
   color: var(--clr-fg);
   text-transform: lowercase;
@@ -137,7 +121,12 @@ button {
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1.2rem;
+  font-size: 2.8rem;
+}
+
+.btn-fill {
+  width: 100%;
+  text-align:center;
 }
 
 .btn {
@@ -211,6 +200,8 @@ button {
 .center {
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
+  /* background-color: green; */
 }
 
 .header {
